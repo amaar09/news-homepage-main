@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+:root{
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+/* ### Neutral */
+
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    -Very-dark-blue: hsl(240, 100%, 5%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.continer{
+    height: 100vh;
+    border: 2px solid red;
+
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* gap: 10px; */
+    grid-auto-rows: minmax(100px, auto);
+
+}
+nav{
+    grid-area: Navbar;
+    border: 2px solid blue;
+    background-image: url("./assets/images/logo.svg");
+    background-repeat: no-repeat;
+    height: 50px;
+
+    grid-column:  1/4;
+    grid-row: 1/2;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav ul li {
+    padding: 0 1em;
+}
+.mainDes{
+    border: 2px solid rgb(0, 255, 13);
+    width: 700px;
+    max-width: 100%;
+    display: inline-block;
+
+    
+    grid-column:  1/3;
+    grid-row: 2/4;
+
+
+}
+.mainBigImage {
+   
+    /* The image used */
+    background-image: url("/assets/images/image-web-3-desktop.jpg");
+    
+    /* You must set a specified height */
+    height: 250px; 
+    
+    /* Center the image */
+    background-position: left top;
+    
+    /* Do not repeat the image */
+    background-repeat: no-repeat;
+    
+    /* Resize the background image to cover the entire container */
+    background-size: 100%; 
+
+    /* grid-column:  1/3;
+    grid-row: 2/3; */
+
+}
+.twoBlock{
+    display: flex;
+    flex-direction: row;
+}
+.boldHeading{
+    width: 40%;
+ 
+    font-weight: 800;
+    font-size: 3em;
+
+    /* grid-column:  1/2;
+    grid-row: 3/4; */
+}
+.lightGreyText{
+    width: 60%;
+    color: var(--Grayish-blue);
+
+    /* grid-column:  2/3;
+    grid-row: 3/4; */
+}
+.newItem{
+    border: 2px solid rgb(0, 89, 255);
+
+    background-color: black;
+    color: white;
+    
+    display: inline-block;
+    width: 400px;
+    /* height: auto; */
+    
+    grid-column:  3/4;
+    grid-row: 2/4;
+}
+.bottomSection{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    grid-column:  1/4;
+    grid-row: 4/5;
+}
+
+.numbring{
+    color: var(--Grayish-blue);
+    font-size: 3em;
+}
+.commonRedHover{
+    font-weight: 800;
+}
+.commonRedHover:hover{
+    color: var(--Soft-red);
+}
+.commonDesc{
+    color: var(--Grayish-blue);
+}
+.twoDivide{
+    display: flex;
+    flex-direction: row;
+}
+.twoDivide img{
+    max-width: 100%;
+    width: 80px;
+    height: auto;
+}
+
+
+***********************************************************************************************************
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+:root{
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+/* ### Neutral */
+
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    -Very-dark-blue: hsl(240, 100%, 5%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.continer{
+    height: 100vh;
+    border: 2px solid red;
+
+}
+nav{
+    grid-area: Navbar;
+    border: 2px solid blue;
+    background-image: url("./assets/images/logo.svg");
+    background-repeat: no-repeat;
+    height: 50px;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav ul li {
+    padding: 0 1em;
+}
+.mainDes{
+    border: 2px solid rgb(0, 255, 13);
+    width: 800px;
+    max-width: 100%;
+    display: inline-block;
+
+}
+.mainBigImage {
+   
+    /* The image used */
+    background-image: url("/assets/images/image-web-3-desktop.jpg");
+    
+    /* You must set a specified height */
+    height: 328px; 
+    
+    /* Center the image */
+    background-position: left top;
+    
+    /* Do not repeat the image */
+    background-repeat: no-repeat;
+    
+    /* Resize the background image to cover the entire container */
+    background-size: 100%; 
+
+
+}
+.twoBlock{
+    display: flex;
+    flex-direction: row;
+}
+.boldHeading{
+    width: 40%;
+ 
+    font-weight: 800;
+    font-size: 3em;
+
+}
+.lightGreyText{
+    width: 60%;
+    color: var(--Dark-grayish-blue);
+}
+.btn{
+    width: fit-content;
+}
+.newItem{
+    border: 2px solid rgb(0, 89, 255);
+
+    background-color: black;
+    color: white;
+    padding: 1.05em;
+    
+    display: inline-block;
+    width: 400px;
+    /* height: auto; */
+}
+.yellowText {
+    color: var(--Soft-orange);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.commonHeadline{
+    font-size: 1.13em;
+    margin-top: 3em ;
+}
+.borderTop{
+    padding-top: 1em;
+    border-top: 2px solid var(--Grayish-blue);
+}
+.bottomSection{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.numbring{
+    color: var(--Grayish-blue);
+    font-size: 3em;
+}
+.commonRedHover{
+    font-weight: 800;
+}
+.commonRedHover:hover{
+    color: var(--Soft-red);
+}
+.commonDesc{
+    color: var(--Dark-grayish-blue);
+}
+.twoDivide{
+    display: flex;
+    flex-direction: row;
+}
+.twoDivide img{
+    max-width: 100%;
+    width: 80px;
+    height: auto;
+}
+
+.navbar{
+    grid-area:NABAR;
+}
+
+.mainDes{
+    grid-area:MAINDES;
+}
+.newItem{
+    grid-area:NEWSITEM;
+}
+.bottomSection{
+    grid-area: BOTTOMSECTION;
+}
+
+.container {
+    margin: 0 9em;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "NABAR NABAR NABAR"
+      "MAINDES MAINDES NEWSITEM"
+      "BOTTOMSECTION BOTTOMSECTION BOTTOMSECTION";
+}

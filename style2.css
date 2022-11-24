@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+:root {
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+    /* ### Neutral */
+
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    -Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.continer {
+    height: 100vh;
+    /* border: 2px solid red; */
+
+}
+
+nav {
+    grid-area: Navbar;
+    /* border: 2px solid blue; */
+    background-image: url("./assets/images/logo.svg");
+    background-repeat: no-repeat;
+    height: 3em;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: inherit;
+    align-items: center;
+}
+
+nav ul li {
+    color: var(--Dark-grayish-blue);
+    padding: 0 1em;
+}
+
+nav ul li:hover {
+    color: var(--Soft-red);
+}
+
+.mainDes {
+    /* border: 2px solid rgb(0, 255, 13); */
+    width: 100%;
+    /* max-width: 800px; */
+    /* display: inline-block; */
+
+}
+
+.mainBigImage {
+
+    /* The image used */
+    background-image: url("/assets/images/image-web-3-desktop.jpg");
+
+    /* You must set a specified height */
+    height: 250px;
+
+    /* Center the image */
+    background-position: left top;
+
+    /* Do not repeat the image */
+    background-repeat: no-repeat;
+
+    /* Resize the background image to cover the entire container */
+    background-size: 100%;
+
+
+}
+
+.twoBlock {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+}
+
+.boldHeading {
+    width: 40%;
+
+    font-weight: 800;
+    font-size: 2.5em;
+
+}
+
+.blockWithBtn {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lightGreyText {
+    color: var(--Dark-grayish-blue);
+
+}
+
+.btn {
+    width: fit-content;
+    background-color: var(--Soft-red);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.newItem {
+    /* border: 2px solid rgb(0, 89, 255); */
+
+    background-color: black;
+    color: white;
+    padding: 1.05em;
+
+    display: inline-block;
+    max-width: 100%;
+    /* max-width: 390px; */
+    /* height: auto; */
+}
+
+.yellowText {
+    color: var(--Soft-orange);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.commonHeadline {
+    font-size: 1.13em;
+    margin-top: 3em;
+    font-weight: 700;
+}
+
+.commonHeadline:hover {
+    cursor: pointer;
+    color: var(--Soft-orange);
+}
+
+.borderTop {
+    padding-top: 1em;
+    border-top: 2px solid var(--Grayish-blue);
+}
+
+.bottomSection {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.numbring {
+    color: var(--Grayish-blue);
+    font-size: 3em;
+}
+
+.commonRedHover {
+    font-weight: 800;
+}
+
+.commonRedHover:hover {
+    color: var(--Soft-red);
+}
+
+.commonDesc {
+    color: hsl(236deg 8% 72%);
+    line-height: 1.5em;
+}
+
+.twoDivide {
+    display: flex;
+    flex-direction: row;
+}
+
+.twoDivide img {
+    max-width: 80px;
+    height: auto;
+}
+
+.navbar {
+    grid-area: NABAR;
+}
+
+.mainDes {
+    grid-area: MAINDES;
+}
+
+.newItem {
+    grid-area: NEWSITEM;
+}
+
+.bottomSection {
+    grid-area: BOTTOMSECTION;
+}
+
+.container {
+    margin: 1em 9em;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-rows: auto;
+    /* grid-template-rows: minmax(100px, auto); */
+    grid-template-areas:
+        "NABAR NABAR "
+        "MAINDES  NEWSITEM"
+        "BOTTOMSECTION  BOTTOMSECTION";
+}
+
+
+@media (max-width:1604) {}
+
+@media (max-width:999px) {
+
+    .container {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-gap: 1.9em;
+        justify-content: center;
+
+        grid-template-columns: 1fr;
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-rows: auto;
+        grid-template-areas:
+            "NABAR"
+            "MAINDES"
+            "NEWSITEM"
+            "BOTTOMSECTION";
+    }
+
+    .bottomSection {
+        /* margin-top: 2em; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .twoDivide {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .twoDivide img {
+        width: 20%;
+        height: 74%;
+    }
+
+    .twoDivide span {
+        width: 80%;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 20px;
+        width: 50px;
+        background-image: url("/assets/images/icon-menu.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    nav ul:hover {
+        padding-top: 10px;
+        background-color: rgb(156, 158, 158);
+        border-radius: 50%;
+    }
+
+    .twoBlock {
+        /* margin-top: 2em; */
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .boldHeading {
+        width: 100%;
+
+    }
+
+    .blockWithBtn {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .newItem {
+        /* margin-top: 2em; */
+    }
+
+    .mainDes {
+        max-width: 100%;
+        /* margin-top: 2em; */
+    }
+
+    .mainBigImage {
+
+        /* The image used */
+        background-image: url("/assets/images/image-web-3-mobile.jpg");
+
+        /* You must set a specified height */
+        height: 328px;
+
+        /* Center the image */
+        background-position: left top;
+
+        /* Do not repeat the image */
+        background-repeat: no-repeat;
+
+        /* Resize the background image to cover the entire container */
+        background-size: 100%;
+    }
+
+
+    /* the menu button  */
+
+    .transform-active {
+
+        transition: 0.5s;
+
+        height: 100%;
+        width: 0;
+        background-color: #9ea0a0;
+
+        position: absolute;
+        /* position: fixed; */
+        z-index: 1;
+        right: 0;
+        top: 0;
+    }
+    .btn{
+        padding: 14px 28px;
+        margin-top: 2em;
+        font-size: 1.05em;
+        font-weight: 700;
+    }
+
+    .popUp {
+        display: none;
+
+    }
+
+    .popUp ul {
+        margin-top: 11em;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popUp ul li {
+        padding: 10px 0 10px 10px;
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+    .popUp ul li:hover {
+        color: var(--Soft-red);
+    }
+
+    .closeBtnImage {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+
+    .closeBtnImage:hover {
+        background-color: gray;
+        border-radius: 50%;
+    }
+
+}
